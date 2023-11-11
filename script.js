@@ -1,7 +1,6 @@
-const api = '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';
+const api = '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';
 const inp = document.getElementById('inp');
 const images = document.querySelector('.images');
-
 const getImage = async () => {
     // إنشاء الطلب (Make A Request) OpenAi
     const methods = {
@@ -23,7 +22,7 @@ const getImage = async () => {
     const listImages = data.data;
     images.innerHTML = '';
     listImages.map(photo => {
-        const container = document.createElement('div')
+        const container = document.createElement('div');
         images.append(container);
         const img = document.createElement('img');
         container.append(img);
